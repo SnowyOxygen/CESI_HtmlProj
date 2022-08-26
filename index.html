@@ -32,11 +32,12 @@
         </div>
     </header>
     <section id="content">
+        <!-- Liste des produits dans un petit ecran (mobile) -->
         <div id="burger">
             <button id="burgerbutton" onclick="BurgerToggle()">&#9776;</button>
             <div id="burgercontent">
                 <p id="burgertitle"></p>
-                <ul>
+                <ul id="listitems2">
                     <li id="listel1"><a href="" id="listellink">Akvarium</a></li>
                     <li id="listel2"><a href="" id="listellink">Alkotester</a></li>
                     <li id="listel1"><a href="" id="listellink">Bildefliser</a></li>
@@ -51,8 +52,9 @@
             </div>
         </div>
 
+        <!-- Liste des produits a gauche dans un grand ecran -->
         <div id="itemlist">
-            <ul>
+            <ul id="listitems1">
                 <li id="listel1"><a href="" id="listellink">Akvarium</a></li>
                 <li id="listel2"><a href="" id="listellink">Alkotester</a></li>
                 <li id="listel1"><a href="" id="listellink">Bildefliser</a></li>
@@ -66,6 +68,7 @@
             </ul>
         </div>
 
+        <!-- Grille des produits avec images -->
         <div id="itemgrid">
             <div id="gridelement">
                 <a href="">
@@ -112,6 +115,8 @@
         </div>
     </section>
 
+    <!-- Script pour creer des elements pour chaque produit dans le fichier json -->
+    <!-- <script src="./Products.js" type="module"></script> -->
     <script>
         var burgContent = document.getElementById('burgercontent');
         var burgOn = false;
