@@ -1,0 +1,14 @@
+div#burger{
+    background-color: rgb(130, 130, 130);;
+    display: none;
+}
+
+@media screen and (max-width:840px) {
+    div#burger{
+        display: block;
+    }
+    div#burgercontent{
+        display: none;
+        transition: ease-in 1s;
+    }
+}

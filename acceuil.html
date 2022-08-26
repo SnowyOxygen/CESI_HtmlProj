@@ -6,27 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acceuil</title>
     <link rel="stylesheet" href="acceuil.css">
+    <link rel="stylesheet" href="burger.css">
 </head>
 <body>
     <header>
-        <img src="Flag_of_Norway.png" alt="img" id="iconImage">
-        <section id="title">
-            <p id="www">www.</p>
-            <p id="ARNGREN">ARNGREN</p>
-            <p id="net">.net</p>
-        </section>
-
-        <div id="navigation">
-            <a href="acceuil.html" id="acceuil">Acceuil</a>
-            <a href="contact.html" id="contact">Contact</a>
+        <div id="titlepresentation">
+            <img src="Flag_of_Norway.png" alt="img" id="iconImage">
+            <section id="title">
+                <p id="www">www.</p>
+                <p id="ARNGREN">ARNGREN</p>
+                <p id="net">.net</p>
+            </section>
         </div>
 
-        <form action="" id="search">
-            <input type="text" name="searchinput", id="searchinput" placeholder="Rechercher ici">
-            <input type="submit" name="submit" id="submit">
-        </form>
+        <div id="navbar">
+            <div id="navigation">
+                <a href="acceuil.html" id="acceuil">Acceuil</a>
+                <a href="contact.html" id="contact">Contact</a>
+            </div>
+    
+            <form action="" id="search">
+                <input type="text" name="searchinput", id="searchinput" placeholder="Rechercher ici">
+                <input type="submit" name="submit" id="submit">
+            </form>
+        </div>
     </header>
     <section id="content">
+        <div id="burger">
+            <button id="burgerbutton" onclick="BurgerToggle()">&#9776;</button>
+            <div id="burgercontent">
+                <p id="burgertitle"></p>
+                <ul>
+                    <li id="listel1"><a href="" id="listellink">Akvarium</a></li>
+                    <li id="listel2"><a href="" id="listellink">Alkotester</a></li>
+                    <li id="listel1"><a href="" id="listellink">Bildefliser</a></li>
+                    <li id="listel2"><a href="" id="listellink">Digital-Kikkert</a></li>
+                    <li id="listel1"><a href="" id="listellink">el-Bil-barn</a></li>
+                    <li id="listel1"><a href="" id="listellink">Fatbike-el</a></li>
+                    <li id="listel2"><a href="" id="listellink">Kikkert</a></li>
+                    <li id="listel1"><a href="" id="listellink">Moped-el</a></li>
+                    <li id="listel2"><a href="" id="listellink">Omformer</a></li>
+                    <li id="listel1"><a href="" id="listellink">Roboter</a></li>
+                </ul>
+            </div>
+        </div>
+
         <div id="itemlist">
             <ul>
                 <li id="listel1"><a href="" id="listellink">Akvarium</a></li>
@@ -87,5 +111,20 @@
             </div>
         </div>
     </section>
+
+    <script>
+        var burgContent = document.getElementById('burgercontent');
+        var burgOn = false;
+
+        function BurgerToggle(){
+            if(burgOn){
+                burgContent.style.display = "none";
+            }
+            else{
+                burgContent.style.display = "block";
+            }
+            burgOn = !burgOn;
+        }
+    </script>
 </body>
 </html>

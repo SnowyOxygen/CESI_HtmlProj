@@ -25,6 +25,8 @@ section#title{
     padding-right: 80px;
     margin-bottom: 10px;
 
+    letter-spacing: 1em;
+
     align-items: center;
 }
 label#searchlabel{
@@ -51,6 +53,10 @@ a#acceuil, a#contact{
 
     color: #898989;
 }
+div#titlepresentation, div#navbar{
+    display: flex;
+    flex-direction: row;
+}
 div#navigation{
     margin: auto;
 }
@@ -65,6 +71,7 @@ div#itemlist{
     display: flex;
     border-right: 3px solid crimson;
     padding-right: 20px;
+    background-color: rgb(130, 130, 130);
 }
 li#listel1, li#listel2{
     padding-top: 10px;
@@ -110,4 +117,27 @@ div#gridelement{
 }
 p#producttitle{
     font-size: 1.25em;
+}
+
+/* Mobile */
+@media screen and (max-width: 840px) {
+    section#title{
+        margin-left: 10px;
+        margin-right: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-bottom: 5px;
+
+        letter-spacing: normal;
+    }
+    div#itemlist{
+        display: none;
+    }
+}
+
+@media  screen and (max-width: 1300px){
+    header{
+        display: block;
+        padding-bottom: 20px;
+    }
 }
