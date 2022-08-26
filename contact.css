@@ -1,5 +1,7 @@
 section#contact{
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     background-color: #c7dcd0;
     background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%236b6b6b' fill-opacity='0.4'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
@@ -24,17 +26,37 @@ form#contactform{
 input{
     margin: 5px;
 }
-div#info{
-    background-color: #625565; 
-}
 p#ownertext, div#address{
     margin-bottom: 5px;
     background-color: #c7dcd0;
     border-radius: 3px;
     font-size: 1em;
+    text-shadow: 1px 1px #3e3546;
     padding: 2px;
 }
 p#contacttitle{
     font-size: 2.5em;
+    color: #c7dcd0;
+    background-color: #323353;
+    padding: 10px;
+    border-radius: 5px;
 }
 
+@media screen and (max-width:840px) {
+    section#contact{
+        flex-direction: column;
+        align-content: center;
+    }
+    div#info, form#contactform{
+        margin: auto;
+        margin-bottom: 20px;
+        width: 300px;
+        max-width: 300px;
+    }
+    div#info{
+        margin-top: 20px;
+    }
+    p#contacttitle{
+        text-align: center;
+    }
+}

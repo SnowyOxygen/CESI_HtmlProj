@@ -15,6 +15,7 @@ div#burgercontent{
 @media screen and (max-width:840px) {
     div#burger{
         display: flex;
+        position: absolute;
     }
     div#burgercontent{
         display: none;
