@@ -1,13 +1,14 @@
-/* Header */
 body,html{
     background-color: rgb(231, 231, 231);
     font-family: monospace;
 }
+
+
+/* Header */
 header{
     display: flex;
     border-bottom: 5px solid crimson;
     border-radius: 3px;
-    
 }
 img#iconImage{
     max-height: 125px;
@@ -20,8 +21,8 @@ section#title{
     display: flex;
     margin-left: 20px;
     margin-right: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 80px;
+    padding-right: 80px;
     margin-bottom: 10px;
 
     align-items: center;
@@ -36,9 +37,22 @@ p#ARNGREN{
     font-size: 3em;
     text-decoration: underline;
 }
-form#search{
+form#search, div#navigation{
     align-self: center;
-    flex-direction: row-reverse;
+    margin-left: auto;
+}
+a#acceuil, a#contact{
+    padding: 10px;
+    padding-bottom: 13px;
+    margin-left: 2em;
+    margin-right: 2em;
+    font-size: 1.5em;
+    align-self: center;
+
+    color: #898989;
+}
+div#navigation{
+    margin: auto;
 }
 
 /* Contenu ------------ */
@@ -55,6 +69,7 @@ div#itemlist{
 li#listel1, li#listel2{
     padding-top: 10px;
     padding-bottom: 10px;
+    padding-left: 10px;
     margin-top: 5px;
     margin-bottom: 5px;
     border: 5px;

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="pragma">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acceuil</title>
+    <link rel="stylesheet" href="acceuil.css">
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <header>
+        <img src="Flag_of_Norway.png" alt="img" id="iconImage">
+        <section id="title">
+            <p id="www">www.</p>
+            <p id="ARNGREN">ARNGREN</p>
+            <p id="net">.net</p>
+        </section>
+
+        <div id="navigation">
+            <a href="acceuil.html" id="acceuil">Acceuil</a>
+            <a href="contact.html" id="contact">Contact</a>
+        </div>
+
+        <form action="" id="search">
+            <input type="text" name="searchinput", id="searchinput" placeholder="Rechercher ici">
+            <input type="submit" name="submit" id="submit">
+        </form>
+    </header>
+
+    <p id="contacttitle">CONTACT</p>
+
+    <section id="contact">
+        <div id="info">
+            <p id="ownertext">Frithjof Arngren</p>
+            <p id="ownertext"><a href="tel:22 14 91 66">Tel: 22 14 91 66</a></p>
+            <p id="ownertext"><a href="tel:92 06 08 73">Mobile: 92 06 08 73</a></p>
+            <p id="ownertext"><a href="mailto:frithjof@arngren.net">frithjof@arngren.net</a></p>
+            <br>
+            <div id="address">
+                <p id="ownertext">Arngren Sky Commuter AS,</p>
+                <p id="ownertext">Sondreveien 3k (Smestad),</p>
+                <p id="ownertext">0378 Oslo.</p>
+            </div>
+
+        </div>
+        <form action="" id="contactform">
+            <label for="prenom" id="contlabel">Prénom</label>
+            <input type="text" id="prenom" name="prenom" required placeholder="john">
+            <label for="nom" id="contlabel">Prénom</label>
+            <input type="text" id="nom" name="nom" required placeholder="doe">
+            <label for="tel" id="contlabel">Tel</label>
+            <input type="tel" id="tel" name="tel" placeholder="09 87 65 54 32">
+            <label for="email" id="contlabel">Email</label>
+            <input type="email" name="email" id="email" required placeholder="johndoe@email.com">
+            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+        </form>
+    </section>
+</body>
+</html>
